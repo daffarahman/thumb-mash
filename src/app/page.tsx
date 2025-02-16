@@ -176,7 +176,7 @@ export default function Home() {
                   imageUrl={thumb.imageUrl}
                   score={thumb.score}
                   onDelete={() => {
-                    setThumbs((t) => t.filter((_, idx) => _.id != thumb.id));
+                    setThumbs((t) => t.filter((_) => _.id != thumb.id));
                   }}
                 />
               ))}
